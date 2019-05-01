@@ -1,23 +1,18 @@
 #include <stdio.h>
 
 int main() {
+	int result=1,number,i;
 	
+	printf("Type a number : ");
+	scanf("%d", &number);
 	
-	int sonuc=1,sayi,i;
-	
-	printf("Bir sayi giriniz : ");
-	scanf("%d", &sayi);
-	
-	for(i=1; i <= sayi; i++) {
+	for(i=1; i <= number; i++) {
 		
-		sonuc = sonuc * i;
+		result = result * i;
 		
 	}
 	
-	printf("%d sayisinin faktoriyeli %d'dir.", sayi,sonuc);
-	
-	
-	
-	
+	printf("%d's factorial is %d.", number,result);
+
 	return 0;
 }
